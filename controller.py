@@ -8,10 +8,11 @@ class SpellChecker:
         self._multiDic = md.MultiDictionary()
         self._view = view
 
+    # funzione essenziale che fa da ponte
     def handleSentence(self, txtIn, language, modality):
-        txtIn = replaceChars(txtIn.lower())
+        txtIn = replaceChars(txtIn.lower()) #pulizia testo
 
-        words = txtIn.split()
+        words = txtIn.split() #split parole
         paroleErrate = " - "
 
         match modality:

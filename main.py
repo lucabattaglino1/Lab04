@@ -6,6 +6,7 @@ import view as v
 
 def main(page: ft.Page):
     # Setup model, view, control according to MVC pattern
+    # ciò che mi permette di collegare tutto
     view = v.View(page)
     controller = c.SpellChecker(view)
     view.setController(controller)
